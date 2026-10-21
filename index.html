@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Trading - Customer Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Royal Trading</h1>
+            <p>Customer Service - Product Inquiry System</p>
+        </header>
+
+        <div class="main-content">
+            <div class="form-section">
+                <h2>Customer Inquiry Form</h2>
+                <form id="inquiryForm">
+                    <label>Customer Name</label>
+                    <input type="text" id="customerName" placeholder="Enter your name" required>
+
+                    <label>Product Name</label>
+                    <select id="productName" required>
+                        <option value="">Select Product</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Groceries">Groceries</option>
+                        <option value="Clothing">Clothing</option>
+                        <option value="Home Appliances">Home Appliances</option>
+                    </select>
+
+                    <label>Inquiry Type</label>
+                    <select id="inquiryType" required>
+                        <option value="">Select Type</option>
+                        <option value="Product Information">Product Information</option>
+                        <option value="Customer Request">Customer Request</option>
+                        <option value="Complaint">Complaint</option>
+                        <option value="Feedback">Feedback</option>
+                    </select>
+
+                    <label>Message</label>
+                    <textarea id="message" rows="4" placeholder="Enter your inquiry..." required></textarea>
+
+                    <button type="submit">Submit Inquiry</button>
+                </form>
+            </div>
+
+            <div class="list-section">
+                <h2>Recent Inquiries</h2>
+                <div id="inquiryList">
+                    <p class="empty">No inquiries yet. Submit a new one!</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Internship Project by Athika Parveen VP | Royal Trading - Valayam</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
